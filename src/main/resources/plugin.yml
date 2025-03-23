@@ -1,0 +1,29 @@
+name: Templete
+version: '${project.version}'
+main: serena.rangedchat.Templete
+api-version: 1.16
+commands:
+  setdist:
+    usage: /setdist N
+    description: 距離を設定する。【制約】0≦N≦10^9, Nは実数
+  setdisty:
+    usage: /setdisty N
+    description: Y軸方向の距離を設定する。【制約】0≦N≦10^9, Nは実数
+  specreceive:
+    usage: /specreceive S
+    description: スペクテイターモードの人がすべてのチャットを見ることができるか設定する。【制約】S∈{"true", "false"}
+  specsend:
+    usage: /specsend S
+    description: スペクテイターモードの人が送信したチャットをスペクテイターでない人が見ることができるか設定する。【制約】S∈{"true", "false"}
+  info:
+    usage: /info
+    description: 説明を表示する。
+  displaytarget:
+    usage: /displaytarget S
+    description: 画面右部に対象を表示するか設定する。【制約】S∈{"true", "false"}
+  targetchat:
+    usage: /targetchat S
+    description: チャット欄に対象を表示するか設定する。【制約】S∈{"true", "false"}
+  all:
+    usage: /all S
+    description: 全体にメッセージを送信する。【制約】|S|≦2x10^5
